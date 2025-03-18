@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramen Rating App</title>
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ramen Rating App</h1>
-    <div id="ramen-menu"></div>
-    <div id="ramen-detail">
-         <h2>Ramen Details</h2>
-         <p>Name: <span id="ramen-name"></span></p>
-         <p>Restaurant: <span id="ramen-restaurant"></span></p>
-         <p>Rating: <span id="ramen-rating"></span></p>
-         <p>Comment: <span id="ramen-comment"></span></p>
+    <header><h1>Ramen Rater</h1></header> 
+    <div id="images">
+        <img src="https://i.pinimg.com/474x/f5/49/a9/f549a95fe58b99799a45eba41c42f82c.jpg"alt="Shoyu Ramen"id="shoyu-ramen">
+        <img src="https://i.pinimg.com/474x/39/bd/92/39bd92e435dfc608fdf33d60ee673b74.jpg"alt="Miso ramen" id="miso-ramen">
+        <img src="https://i.pinimg.com/474x/fc/c8/22/fcc822dfc245a4a258e5fe35678ac9c8.jpg" alt="Tonkotsu Ramen" id="tonkotsu-ramen">
+        <img src="https://i.pinimg.com/474x/0f/9d/6b/0f9d6b0bfb9b2294215f26c45c7e37f0.jpg" alt="Gyukotsu Ramen"id="gyukotsu-ramen">
+    <img src="https://i.pinimg.com/736x/da/ee/13/daee13a8c2166112e84b29c99e31f313.jpg" alt="Shio Ramen"id="shio-ramen">
     </div>
+    <div id="ramen-menu"></div>
+
+    <div id="ramen-detail">
+        <img id="detail-image" src="" alt="Ramen Image" />
+        <h2 id="detail-name">Insert Name Here</h2>
+        <h3 id="detail-restaurant">Insert Restaurant Here</h3>
+        <button id="delete-ramen" style="display: none">Delete Ramen</button>
+  
+        <p>
+          <strong>Rating:</strong>
+          <span id="detail-rating">Insert rating here</span> / 10
+        </p>
+        <p>
+          <strong>Comment:</strong>
+          <span id="detail-comment">Ins
+
     <form id="new-ramen">
         <h2>Add New Ramen</h2>
         <label for="name">Name:</label>
@@ -25,11 +40,12 @@
         <label for="image">Image URL:</label>
         <input type="text" id="image" name="image" required>
         <label for="rating">Rating:</label>
-        <input type="number" id="rating" name="rating" min="1" max="10" required>
+        <input type="number" id="rating" name="rating" min="1" max="5" required>
         <label for="comment">Comment:</label>
         <textarea id="comment" name="comment" required></textarea>
         <button type="submit">Add Ramen</button>
-    </form>
+        <button id="delete">Delete Selected Ramen</button>
+   
     <script src="index.js"></script>
 </body>
 </html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
